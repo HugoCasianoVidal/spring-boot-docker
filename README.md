@@ -19,14 +19,6 @@ sh-4.4# java -version
 openjdk version "18.0.1.1" 2022-04-22
 ```
 
-
-
-
-
-```console
-docker exec -it mycontainer /bin/sh
-```
-
 # Resource links
 How to use the OpenJDK image
 https://hub.docker.com/_/openjdk
