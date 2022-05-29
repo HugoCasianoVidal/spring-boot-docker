@@ -4,11 +4,14 @@ Basic App which integrates Spring Boot and Docker
 ## It was created using the following tutorial
 https://spring.io/guides/gs/spring-boot-docker/
 
-## Commands executed on Ubuntu 20.04
+## How to execute it (tested on Ubuntu 20.04)
 ```console
 sudo snap install docker
 docker pull openjdk
+docker build -t springio/gs-spring-boot-docker .
+sudo docker run -p 8080:8080 springio/gs-spring-boot-docker
 ```
+Note: this is not production ready code, is just for educational porpouses, for production it will not be executed as sudo.
 
 
 # To run a Open JDK container (for playground porpouses):
