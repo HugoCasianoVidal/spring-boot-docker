@@ -11,7 +11,14 @@ docker pull openjdk
 docker build -t springio/gs-spring-boot-docker .
 sudo docker run -p 8080:8080 springio/gs-spring-boot-docker
 ```
-Note: this is not production ready code, is just for educational porpouses, for production it will not be executed as sudo.
+Note: this is not production ready code, is just for testing porpouses, for production it will not be executed as sudo.
+
+## Another way to execute it
+It can be built using a maven plugin and pushed as a docker image:
+```console
+mvn spring-boot:build-image
+sudo docker run -p 8080:8080 docker.io/library/spring-boot-docker:0.0.1-SNAPSHOT
+```
 
 
 # To run a Open JDK container (for playground porpouses):
